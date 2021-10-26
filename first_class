@@ -17,3 +17,5 @@ media = (mum1+num2)/2.0;
 
 print("media = \f\n", media);
 
+}
+
