@@ -5,11 +5,11 @@
 
 int main(){
 
-    float ComponentNumber, AverageValue1, AverageValue2, AditionValue, Number, ProcessValue, FirstValue, LastValue;
+    float componentNumber, averageValue1, averageValue2, aditionValue, number, processValue, firstValue, lastValue;
 
     printf("Por Favor, importe a quantidade de componentes de N");
 
-    scanf("%f", &ComponentNumber); 
+    scanf("%f", &componentNumber); 
 
     Adition();
 
@@ -17,26 +17,26 @@ int main(){
 
 void Adition(){
 
-    if(ProcessValue < ComponentNumber){
+    if(processValue < componentNumber){
 
-        scanf("%f", &Number); 
+        scanf("%f", &number); 
 
-        AditionValue = (AditionValue + Number);
+        aditionValue = (aditionValue + number);
 
-        ProcessValue();
+        processValue();
 
     } else {    
 
-        AverageValue1 = (AditionValue / ComponentNumber);
+        averageValue1 = (aditionValue / componentNumber);
 
-        AverageValue2 = ((FirstValue + LastValue) / 2);
+        averageValue2 = ((firstValue + lastValue) / 2);
 
-        Printf("O valor da média geral é igual á %d" , AverageValue1);
+        Printf("O valor da média geral é igual á %d" , averageValue1);
 
-        Printf("O valor da média entre o maior e menor valor é igual á %d" , AverageValue2);
+        Printf("O valor da média entre o maior e menor valor é igual á %d" , averageValue2);
 
 
-        if(AverageValue1 <= AverageValue2){
+        if(averageValue1 <= averageValue2){
 
             Printf("A média geral é menor ou igual a média do maior/menor componente");
             
@@ -51,35 +51,35 @@ void Adition(){
 
 void Process(){
 
-    if(Number < FirstValue){
+    if(number < firstValue){
 
-       Number = FirstValue;
+       number = firstValue;
 
-        if(ProcessValue = 0){
+        if(processValue = 0){
 
-           Number = LastValue; 
+           number = lastValue; 
 
-           ProcessValue = (ProcessValue + 1);
+           processValue = (processValue + 1);
 
         }else{
 
-           ProcessValue = (ProcessValue + 1);
+           processValue = (processValue + 1);
         }
 
     }else{
 
-        if(Number > LastValue){
+        if(number > lastValue){
 
-            Number = LastValue;
+            number = lastValue;
         }else{
 
-            if(ProcessValue = 0){
+            if(processValue = 0){
 
-             Number = FirstValue;
+             number = firstValue;
 
             }else{
 
-             ProcessValue = (ProcessValue + 1);
+             processValue = (processValue + 1);
             }
         }
     }
