@@ -3,19 +3,18 @@
 
 // ---------------------------------------------------
 
-#include <stdio.h>
+#include <stdio.h>  // including library "stdio"
 
-main()
-{
-int num1, num2; 
-float media; 
+int main(){  // calling main fuction to code 
 
-scanf("%d",&num1);
-scanf("%d",&num2);
+float media, num1, num2; // creating 3 variables to use in math operation 
 
-media = (mum1+num2)/2.0;
+num1 = 1.0;  // including value "1" into the variable num1 
+num2 = 3.0;  // including value "3" into the variable num2  
 
-print("media = \f\n", media);
+media = (mum1+num2)/2.0; // including math operation into the variable "media"
+
+print("media = %.0f", media); // printing the value of "media" with a sentence before. 
 
 }
 
