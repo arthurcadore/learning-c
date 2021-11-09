@@ -6,29 +6,29 @@ int main ()
     int x;
     int z;
     int operador;
-    int media; 
+    float media; 
 
-    scanf("%c",&x);
-    scanf("%c",&y);
+    scanf("%d",&x);
+    scanf("%d",&y);
     scanf("%c",&operador);
 
     if (operador == '+'){
-        media = (x+z);
+        media = x+z;
         printf("media = %.0f", media);
     }
 
     else if (operador == '-'){
-        media = (x-z);
+        media = x-z;
         printf("media = %.0f", media);
     }
 
     else if (operador == '*'){
-        media = (x*z);
+        media = x*z;
         printf("media = %.0f", media);
     }
 
     else if (operador == '/'){
-        media = (x/z);
+        media = x/z;
         printf("media = %.0f", media);
     }
     
