@@ -5,41 +5,36 @@ int main ()
 {
     int x;
     int z;
-    int A;
+    int operador;
     int media; 
 
     scanf("%c",&x);
     scanf("%c",&y);
-    scanf("%c",&A);
+    scanf("%c",&operador);
 
-    if (A == +){
-
+    if (operador == '+'){
         media = (x+z);
         printf("media = %.0f", media);
     }
 
-    else if (A == -){
-
+    else if (operador == '-'){
         media = (x-z);
         printf("media = %.0f", media);
     }
 
-    else if (A == *){
-
+    else if (operador == '*'){
         media = (x*z);
         printf("media = %.0f", media);
     }
 
-    else if (A == /){
-
+    else if (operador == '/'){
         media = (x/z);
         printf("media = %.0f", media);
     }
     
     else {
-
         printf("Operação não definida");
     }
-
+    
   return 0;
 }
