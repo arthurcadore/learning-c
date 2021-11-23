@@ -23,30 +23,32 @@ int main(){
 
     // Testing if "input1" is positive and intire. 
     do{
+
      printf("Input the value of variable 'N'\n");
 
-        scanf("%i", &input1);
+     scanf("%i", &input1);
 
     }while(input1 < 0);
 
-     // Testing if "input2" is positive and intire. 
+    // Testing if "input2" is positive and intire. 
     do{
+
      printf("Input the value of variable 'M'\n");
 
-        scanf("%i", &input2);
+     scanf("%i", &input2);
         
     }while(input2 < 0);
 
     // Math fatoration of "input1"
     for(fatIN1 = 1; input1 > 1; input1 = input1 - 1){
 
-        fatIN1 = fatIN1 * input1; 
+     fatIN1 = fatIN1 * input1; 
     }
 
     // Math fatoration of "input2"
     for(fatIN2 = 1; input2 > 1; input2 = input2 - 1){
 
-        fatIN2 = fatIN2 * input2;
+     fatIN2 = fatIN2 * input2;
     
     }
 
