@@ -13,22 +13,22 @@ int main() {
     char charOdd;
 
     do {
-        printf("Entre com o tamanho do triângulo\n");
+        printf("Entre com o tamanho do triângulo (Número Inteiro)\n");
 
         scanf("%i", &sizeValue);
     } while (sizeValue < 2);
 
     do {
-        printf("Entre com o número de triângulos\n");
+        printf("Entre com o número de triângulos (Número Inteiro)\n");
 
         scanf("%i", &shapesValue);
     } while (shapesValue < 0);
 
-	printf("Entre com o primeiro caractere de impressão\n");
+	printf("Entre com o primeiro caractere de impressão (Caractere AlfaNumérico)\n");
 
         scanf(" %c", &charEven);
 
-	printf("Entre com o segundo caractere de impressão\n");
+	printf("Entre com o segundo caractere de impressão (Caractere AlfaNumérico)\n");
 
         scanf(" %c", &charOdd);
 
@@ -61,6 +61,8 @@ int main() {
 
         processValue++;
     }
+
+	printf("Operação finalizada!\n");
 
     return 0;
 }
