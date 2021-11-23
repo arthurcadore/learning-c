@@ -1,5 +1,9 @@
-// First class - Eng. Telecom.
-// Name: Cadore.AC
+// Course: Telecom engineering 
+// Name: Cadore-AC
+
+// ---------------------------------------------------
+
+// Challange: Doing math operations to get fibonacci sequence with "N" series. 
 
 // ---------------------------------------------------
 

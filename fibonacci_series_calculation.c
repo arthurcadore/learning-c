@@ -1,4 +1,4 @@
-// First class - Eng. Telecom. 
+// Course: Telecom engineering 
 // Name: Cadore-AC
 
 // ---------------------------------------------------
