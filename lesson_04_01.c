@@ -7,6 +7,11 @@
 
 // ---------------------------------------------------
 
+// First class - Eng. Telecom. 
+// Name: Cadore.AC
+
+// ---------------------------------------------------
+
 #include <stdio.h>  
 
 int main(){  
@@ -47,11 +52,12 @@ int main(){
     output=(float)output1/output2; 
 
 
-    printf("Fatoration value of'N'\n%d\nFatoration value of 'M'\n%d\n", fatIN1, fatIN2);
+    printf("Fatoration value of 'N' = %d\n\nFatoration value of 'M' = %d\n\n", fatIN1, fatIN2);
 
  
-    printf("Output value of expression F = (N!*2)/(M!+1):%f\n\n", output);
+    printf("Output value of {F = (N!*2)/(M!+1)} expression is  = %f\n\n", output);
 	
     printf("Operation finished \n");
 
 }
+
