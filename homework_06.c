@@ -1,53 +1,58 @@
-// First class - Eng. Telecom. 
+// First class - Eng. Telecom.
 // Name: Cadore.AC
 
 // ---------------------------------------------------
 
-#include <stdio.h>  
+#include <stdio.h>
 
-int main(){  
+int main() {
+    /* User inputs*/
+    int sizeValue, shapesValue;
+    int processValue = 1;
+    char charEven = 'C';
+    char charOdd = 'A';
 
-    int sizeValue, shapesValue, processValue, processVariable1, processVariable2; 
+    do {
+        printf("Entre com o tamanho do triângulo\n");
 
-    processValue = 1;
+        scanf("%i", &sizeValue);
+    } while (sizeValue < 2);
 
-    char ch='C';
-
-    printf("Entre com o tamanho do triângulo\n");
-
-    scanf("%i", &sizeValue); 
-
-    while(sizeValue >= 2){
-
+    do {
         printf("Entre com o número de triângulos\n");
 
-        scanf("%i", &shapesValue); 
+        scanf("%i", &shapesValue);
+    } while (shapesValue < 0);
 
-        while(shapesValue >= 1){
+    printf("Imprimindo os triâgulos...\n");
 
-            printf("Imprimindo os triâgulos...\n");
+    while (processValue <= shapesValue) {
+        int processVariable1 = 0;
 
-            while(processValue <= shapesValue){
+        char ch;
 
-                for(int processVariable1 = 0; processVariable1 < sizeValue; processVariable1++){
-
-                    for(int processVariable2 = 0; processVariable2 <= processVariable1; processVariable2++){
-
-                        printf("%c", ch);
-                    }
-
-                    printf("\n");
-                }
-
-                processValue++;   
-
-            }
-
-            return 0; 
-
+        if (processValue % 2 == 0) {
+            ch = charEven;
+        } else {
+            ch = charOdd;
         }
 
+        while (processVariable1 < sizeValue) {
+            int processVariable2 = 0;
+
+            while (processVariable2 <= processVariable1) {
+                printf("%c", ch);
+
+                processVariable2++;
+            }
+
+            printf("\n");
+
+            processVariable1++;
+        }
+
+        processValue++;
     }
 
+    return 0;
 }
-
