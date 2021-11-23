@@ -7,28 +7,53 @@
 
 int main(){  // calling main fuction to code 
 
-    float sizeValue, shapesValue; // creating 3 variables to use in math operation 
+    int sizeValue, shapesValue, processValue, i, j; // creating 3 variables to use in math operation 
+
+    processValue = 1;
+
+    char ch='A';
 
     printf("Entre com o tamanho do triângulo\n");
 
-    scanf("%d", &sizeValue); // importing values and including into the variable "sizeValue"
+    scanf("%i", &sizeValue); // importing values and including into the variable "sizeValue"
 
     while(sizeValue >= 2){
 
         printf("Entre com o número de triângulos\n");
 
-        scanf("%d", &shapesValue); // importing values and including into the variable "num1"
+        scanf("%i", &shapesValue); // importing values and including into the variable "shapesValue"
 
             while(shapesValue >= 1){
 
+                printf("Aqui estão os triâgulos:\n");
+
+                    while(processValue > 2){
+
+                          printf("(A)\n\n");
+
+                            for(int i = 0; i <= 9;i++){
+
+                                    for(int j = 0;j <= i;j++){
+
+                                        printf("*");
+                                    }
+
+                                printf("\n");
+                            }
+
+                         processValue++;   
+
+     
+                    }
+
                 
+
+
+             return 0; 
 
             }
 
-
     }
-
-return 0;
 
 }
 
