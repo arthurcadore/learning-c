@@ -25,7 +25,7 @@ int main ()
     printf("\nThe second value inputed is = %d\n", input2);
     
     printf("\nPlease, input the operator character (+ ; - ; * ; / )\n");
-    scanf("%c",&mathOperator);
+    scanf(" %c",&mathOperator);
     printf("\nThe operator value is = %c\n", mathOperator);
 
     printf("\n\n------------------------------------\n\n");
@@ -54,6 +54,9 @@ int main ()
     else {
         printf("\nOperator is Invalid, please write it again!\n");
     }
+    
+
+  printf("\nOperation finished!\n");
     
   return 0;
 }
