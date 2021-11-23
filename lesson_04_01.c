@@ -16,14 +16,14 @@ int main(){
     float output, output1, output2;
 
     do{
-     printf("Entre com o valor de 'N'\n");
+     printf("Input the value of variable 'N'\n");
 
         scanf("%i", &input1);
 
     }while(input1 < 0);
 
     do{
-     printf("Entre com o valor de 'M'\n");
+     printf("Input the value of variable 'M'\n");
 
         scanf("%i", &input2);
         
@@ -47,13 +47,11 @@ int main(){
     output=(float)output1/output2; 
 
 
-    printf("Valor da fatorial de 'N'\n%d\nValor da fatorial de 'M'\n%d\n", fatIN1, fatIN2);
+    printf("Fatoration value of'N'\n%d\nFatoration value of 'M'\n%d\n", fatIN1, fatIN2);
 
  
-    printf("Valor do resultado da operação\n%f\n", output);
+    printf("Output value of expression F = (N!*2)/(M!+1):%f\n\n", output);
 	
-
-    printf("Operação finalizada!\n");
+    printf("Operation finished \n");
 
 }
-
