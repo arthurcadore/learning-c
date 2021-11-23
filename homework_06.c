@@ -9,8 +9,8 @@ int main() {
     /* User inputs*/
     int sizeValue, shapesValue;
     int processValue = 1;
-    char charEven = 'C';
-    char charOdd = 'A';
+    char charEven;
+    char charOdd;
 
     do {
         printf("Entre com o tamanho do triângulo\n");
@@ -23,6 +23,14 @@ int main() {
 
         scanf("%i", &shapesValue);
     } while (shapesValue < 0);
+
+	printf("Entre com o primeiro caractere de impressão\n");
+
+        scanf(" %c", &charEven);
+
+	printf("Entre com o segundo caractere de impressão\n");
+
+        scanf(" %c", &charOdd);
 
     printf("Imprimindo os triâgulos...\n");
 
