@@ -43,23 +43,11 @@ int main(){
     output=(float)output1/output2; 
 
 
-    printf("Valor da fatorial de 'N'\n");
+    printf("Valor da fatorial de 'N'\n%d\nValor da fatorial de 'M'\n%d\n", fatIN1, fatIN2);
 
-    printf("%d", fatIN1);
-
-    printf("\n");
-
-    printf("Valor da fatorial de 'M'\n");
-
-    printf("%d", fatIN2);
-
-    printf("\n");
-
-    printf("Valor do resultado da operação\n");
+ 
+    printf("Valor do resultado da operação\n%f\n", output);
 	
-    printf("%f", output);
-
-    printf("\n");
 
     printf("Operação finalizada!\n");
 
