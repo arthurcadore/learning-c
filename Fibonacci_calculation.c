@@ -11,18 +11,16 @@
 
     int main(){  
 
-    int seriesVaule, outputValue;
-
-    int firstValue, secondValue, processSeries = 1;
+    int seriesVaule, outputValue, firstValue = 1, secondValue = 1, processSeries = 2;
 
     do{
 
      printf("Input how many series the script will calculate\n");
 
      scanf("%d", &seriesVaule);
+     printf("\n\nInputed value of = %d series\n\n", seriesVaule);
 
     }while(seriesVaule < 0);
-
 
     while(processSeries <= seriesVaule){
 
@@ -40,9 +38,10 @@
 
         }
 
+         printf("Serie N°%d - Fibonacci value = %d\n", processSeries, outputValue);
         processSeries++;
     }
 
-    printf("%d\n", outputValue);
+   printf("Fibonacci Series finished!");
 
 }
