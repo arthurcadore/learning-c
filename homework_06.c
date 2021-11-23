@@ -3,53 +3,49 @@
 
 // ---------------------------------------------------
 
-#include <stdio.h>  // including library "stdio"
+#include <stdio.h>  
 
-int main(){  // calling main fuction to code 
+int main(){  
 
-    int sizeValue, shapesValue, processValue, processVariable1, processVariable2; // creating 3 variables to use in math operation 
+    int sizeValue, shapesValue, processValue, processVariable1, processVariable2; 
 
     processValue = 1;
 
-    char ch='B';
+    char ch='C';
 
     printf("Entre com o tamanho do triângulo\n");
 
-    scanf("%i", &sizeValue); // importing values and including into the variable "sizeValue"
+    scanf("%i", &sizeValue); 
 
     while(sizeValue >= 2){
 
         printf("Entre com o número de triângulos\n");
 
-        scanf("%i", &shapesValue); // importing values and including into the variable "shapesValue"
+        scanf("%i", &shapesValue); 
 
-            while(shapesValue >= 1){
+        while(shapesValue >= 1){
 
-                printf("Aqui estão os triâgulos:\n");
+            printf("Imprimindo os triâgulos...\n");
 
-                    while(processValue <= shapesValue){
+            while(processValue <= shapesValue){
 
-                            for(int processVariable1 = 0; processVariable1 < sizeValue; processVariable1++){
+                for(int processVariable1 = 0; processVariable1 < sizeValue; processVariable1++){
 
-                                    for(int processVariable2 = 0; processVariable2 <= processVariable1; processVariable2++){
+                    for(int processVariable2 = 0; processVariable2 <= processVariable1; processVariable2++){
 
-                                        printf("%c", ch);
-                                    }
-
-                                printf("\n");
-                            }
-
-                         processValue++;   
-
-     
+                        printf("%c", ch);
                     }
 
-                
+                    printf("\n");
+                }
 
-
-             return 0; 
+                processValue++;   
 
             }
+
+            return 0; 
+
+        }
 
     }
 
