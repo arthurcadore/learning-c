@@ -3,25 +3,25 @@
 
 // ---------------------------------------------------
 
-#include <stdio.h> 
+#include <stdio.h>  // including library "stdio"
 
-int main(){  
+int main(){  // calling main fuction to code 
 
-    int sizeValue, shapesValue, processValue, i, j; 
+    int sizeValue, shapesValue, processValue, i, j; // creating 3 variables to use in math operation 
 
     processValue = 1;
 
-    char ch='A';
+    char ch='B';
 
     printf("Entre com o tamanho do triângulo\n");
 
-    scanf("%i", &sizeValue); 
+    scanf("%i", &sizeValue); // importing values and including into the variable "sizeValue"
 
     while(sizeValue >= 2){
 
         printf("Entre com o número de triângulos\n");
 
-        scanf("%i", &shapesValue); 
+        scanf("%i", &shapesValue); // importing values and including into the variable "shapesValue"
 
             while(shapesValue >= 1){
 
@@ -33,19 +33,23 @@ int main(){
 
                                     for(int j = 0;j <= i;j++){
 
-                                     printf("*");
-                                 }
+                                        printf("%c", ch);
+                                    }
 
-                             printf("%c", ch);
-                        }
+                                printf("\n");
+                            }
 
-                     processValue++;   
+                         processValue++;   
 
-                }
+     
+                    }
+
+                
+
 
              return 0; 
 
-         }
+            }
 
     }
 
