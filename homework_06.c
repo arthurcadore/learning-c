@@ -27,18 +27,16 @@ int main(){  // calling main fuction to code
 
                 printf("Aqui estão os triâgulos:\n");
 
-                    while(processValue > 2){
+                    while(processValue <= shapesValue){
 
-                          printf("(A)\n\n");
-
-                            for(int i = 0; i <= 9;i++){
+                            for(int i = 0; i < sizeValue; i++){
 
                                     for(int j = 0;j <= i;j++){
 
                                         printf("*");
                                     }
 
-                                printf("\n");
+                                printf("%c, ch");
                             }
 
                          processValue++;   
