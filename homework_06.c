@@ -7,7 +7,7 @@
 
 int main(){  // calling main fuction to code 
 
-    int sizeValue, shapesValue, processValue, i, j; // creating 3 variables to use in math operation 
+    int sizeValue, shapesValue, processValue, processVariable1, processVariable2; // creating 3 variables to use in math operation 
 
     processValue = 1;
 
@@ -29,9 +29,9 @@ int main(){  // calling main fuction to code
 
                     while(processValue <= shapesValue){
 
-                            for(int i = 0; i < sizeValue; i++){
+                            for(int processVariable1 = 0; processVariable1 < sizeValue; processVariable1++){
 
-                                    for(int j = 0;j <= i;j++){
+                                    for(int processVariable2 = 0; processVariable2 <= processVariable1; processVariable2++){
 
                                         printf("%c", ch);
                                     }
