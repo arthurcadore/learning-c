@@ -53,4 +53,6 @@ int main() {
         mathOperator++;
 
     } while (mathOperator <= input);
+
+    printf("\nOperation finished!\n");
 }
