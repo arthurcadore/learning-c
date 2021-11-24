@@ -44,6 +44,6 @@
         processSeries++;
     }
 
-   printf("Fibonacci Series finished!");
+   printf("\nFibonacci Series finished!\n");
 
 }
