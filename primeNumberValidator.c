@@ -44,7 +44,7 @@ int main() {
                     mathOperator);
             }
 
-            return 0;
+            break;
 
         } else {
             printf("Test Failed with = %d!\n", mathOperator);
