@@ -12,7 +12,10 @@
 int main()
 
 {
+    // Creating variables to input data, and doing math operations.
     int input1, input2, mathOperator;
+
+    // Creating a float variable for output, it need to be float for non-inte
     float expressionOutput;
 
     printf("\nPlease, input the first value to calculate...\n");
