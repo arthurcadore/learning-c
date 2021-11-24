@@ -3,7 +3,7 @@
 
 // ---------------------------------------------------
 
-// Challange: Input an randon number, and verify if that is primary number or
+// Challange: Input an randon number, and verify if that is prime number or
 // not.
 
 // ----------------------------------------------------
@@ -28,13 +28,13 @@ int main() {
         if (input % mathOperator == 0) {
             if (input == mathOperator) {
                 printf(
-                    "\n\nYes, your number is a primary number, it only can be "
+                    "\n\nYes, your number is a prime number, it only can be "
                     "devided by 1 and %d!\n\n",
                     mathOperator);
 
             } else {
                 printf(
-                    "\n\nThe value inputed ins't a primary number, it can be "
+                    "\n\nThe value inputed ins't a prime number, it can be "
                     "devided by %d!\n\n",
                     mathOperator);
             }
