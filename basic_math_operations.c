@@ -12,8 +12,7 @@
 int main()
 
 {
-    int input1, input2;
-    char mathOperator;
+    int input1, input2, mathOperator;
     float expressionOutput;
 
     printf("\nPlease, input the first value to calculate...\n");
@@ -24,36 +23,37 @@ int main()
     scanf("%d", &input2);
     printf("\nThe second value inputed is = %d\n", input2);
 
-    printf("\nPlease, input the operator character (+ ; - ; * ; / )\n");
-    scanf(" %c", &mathOperator);
-    printf("\nThe operator value is = %c\n", mathOperator);
+    printf("\nPlease, input the operator character \n");
+    printf("(1) for addition \n");
+    printf("(2) for subtraction \n");
+    printf("(3) for multiplication \n");
+    printf("(4) for division \n");
 
-    printf("\n\n------------------------------------\n\n");
+    scanf("%d", &mathOperator);
+    printf("\nThe operator value is = %d\n", mathOperator);
 
-    if (mathOperator == '+') {
+    if (mathOperator == 1) {
         expressionOutput = input1 + input2;
-        printf("\nThe addition value of both variables correspond to = %.0f\n",
+        printf("\nThe addition value of both variables correspond to = %f\n",
                expressionOutput);
     }
 
-    else if (mathOperator == '-') {
+    else if (mathOperator == 2) {
         expressionOutput = input1 - input2;
-        printf(
-            "\nThe subtraction value of both variables correspond to = %.0f\n",
-            expressionOutput);
+        printf("\nThe subtraction value of both variables correspond to = %f\n",
+               expressionOutput);
     }
 
-    else if (mathOperator == '*') {
+    else if (mathOperator == 3) {
         expressionOutput = input1 * input2;
         printf(
-            "\nThe multiplication value of both variables correspond to = "
-            "%.0f\n",
+            "\nThe multiplication value of both variables correspond to = %f\n",
             expressionOutput);
     }
 
-    else if (mathOperator == '/') {
+    else if (mathOperator == 4) {
         expressionOutput = input1 / input2;
-        printf("\nThe division value of both variables correspond to = %.0f\n",
+        printf("\nThe division value of both variables correspond to = %f\n",
                expressionOutput);
     }
 
