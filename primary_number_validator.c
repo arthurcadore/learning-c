@@ -11,56 +11,41 @@
 #include <stdio.h>
 
 int main() {
-    int input, mathOperator = 13, Output;
+    int input, mathOperator = 2, Output;
 
-    printf("Plese input the number value!\n");
-    scanf("%d", &input);
+    do {
+        printf("Plese input the number value!\n");
 
-    if (input % 2 == 0) {
-        printf(
-            "The value inputed ins't a primary number, it can be devided by "
-            "2!\n");
+        scanf("%d", &input);
 
-    }
+        printf("\n\nThe number inputed correspond to = %d \n\n", input);
 
-    else if (input % 3 == 0) {
-        printf(
-            "The value inputed ins't a primary number, it can be devided by "
-            "3!\n");
-    }
+    } while (input < 0);
 
-    else if (input % 5 == 0) {
-        printf(
-            "The value inputed ins't a primary number, it can be devided by "
-            "5!\n");
-    }
+    do {
+        printf("Starting test with = %d!\n", mathOperator);
 
-    else if (input % 7 == 0) {
-        printf(
-            "The value inputed ins't a primary number, it can be devided by "
-            "7!\n");
-    }
-
-    else if (input % 11 == 0) {
-        printf(
-            "The value inputed ins't a primary number, it can be devided by "
-            "11!\n");
-    }
-
-    else {
-        do {
-            if (input % mathOperator == 0) {
+        if (input % mathOperator == 0) {
+            if (input == mathOperator) {
                 printf(
-                    "The value inputed ins't a primary number, it can be "
-                    "devided by %d!\n",
+                    "\n\nYes, your number is a primary number, it only can be "
+                    "devided by 1 and %d!\n\n",
                     mathOperator);
 
             } else {
-                mathOperator++;
+                printf(
+                    "\n\nThe value inputed ins't a primary number, it can be "
+                    "devided by %d!\n\n",
+                    mathOperator);
             }
 
-        } while (mathOperator <= input);
-    }
+            return 0;
 
-    return 0;
+        } else {
+            printf("Test Failed with = %d!\n", mathOperator);
+        }
+
+        mathOperator++;
+
+    } while (mathOperator <= input);
 }
