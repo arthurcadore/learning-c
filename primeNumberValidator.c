@@ -11,8 +11,11 @@
 #include <stdio.h>
 
 int main() {
+    // Creating variables, mathOperator need to be 2, because the first value
+    // that will be tested is 2.
     int input, mathOperator = 2, Output;
 
+    // Validating if the number is correctly inputed to do the operations.
     do {
         printf("Plese input the number value!\n");
 
@@ -22,6 +25,8 @@ int main() {
 
     } while (input < 0);
 
+    // Testing all numbers between 2 and the number iputed to test with number
+    // can devide it.
     do {
         printf("Starting test with = %d!\n", mathOperator);
 
