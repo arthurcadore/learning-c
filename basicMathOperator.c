@@ -6,8 +6,9 @@
 // Challange: Code to get all simple results for two variables.
 
 // ----------------------------------------------------
-
+#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 
@@ -34,6 +35,8 @@ int main()
     printf("(2) for subtraction \n");
     printf("(3) for multiplication \n");
     printf("(4) for division \n");
+    printf("(5) for exponential of both values inputed \n");
+    printf("(6) for square root of both values inputed \n");
 
     scanf("%d", &mathOperator);
     printf("\nThe operator value is = %d\n", mathOperator);
@@ -63,6 +66,30 @@ int main()
         printf("\nThe division value of both variables correspond to = %f\n",
                expressionOutput);
     }
+
+    else if (mathOperator == 5) {
+        expressionOutput = input1 * input1;
+
+        printf("\nThe exponential of the first value correspond to = %f\n",
+               expressionOutput);
+
+        expressionOutput = input2 * input2;
+
+        printf("\nThe exponential of the second value correspond to = %f\n",
+               expressionOutput);
+    }
+
+    /*else if (mathOperator == 6) {
+        expressionOutput = sqrt(input1);
+
+        printf("\nThe square root of the first value correspond to = %f\n",
+               expressionOutput);
+
+        expressionOutput = sqrt(input2);
+
+        printf("\nThe square root of the second value correspond to = %f\n",
+               expressionOutput);
+    }*/
 
     else {
         printf("\nOperator is Invalid, please write it again!\n");
