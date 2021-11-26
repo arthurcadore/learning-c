@@ -59,7 +59,7 @@ int main()
     }
 
     else if (mathOperator == 4) {
-        expressionOutput = input1 / input2;
+        expressionOutput = (float)input1 / input2;
         printf("\nThe division value of both variables correspond to = %f\n",
                expressionOutput);
     }
