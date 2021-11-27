@@ -9,10 +9,11 @@
 // ---------------------------------------------------
 
 #include <stdio.h>
+#include <math.h>
 
 int main() {
 
-    int InputValue, seriesTestingValue, sqrtValue = 1;
+    int inputValue, seriesTestingValue, sqrtValue = 1, testingValue;
 
     float outputValue; 
 
@@ -22,30 +23,29 @@ int main() {
         scanf("%d", &inputValue);
         printf("\n The number inputed correspond to = %d\n", inputValue);
 
-    }while(inputValue < 0)
+    }while(inputValue < 0);
 
     do{
 
-        OutputValue = (float) sqrt(sqrtValue);
+        outputValue = (float) sqrt(sqrtValue);
 
-         if((sqrtValue - floor(sqrtValue)) == 0){
+        testingValue = outputValue * outputValue;
 
-         printf("\n The sqrt number is intiger, and correspond to = %f", OutputValue);
+         if((sqrtValue - testingValue) == 0){
+
+         printf("\n The sqrt number of %d is intiger, and correspond to = %f\n", sqrtValue, outputValue);
         
-        }else {
+        } /*else {
 
-         printf("\n The sqrt number isn't an intiger number, 'cause it correspond to = %f", OutputValue);
+         printf("\n The sqrt number of %d isn't an intiger number, and it value correspond to = %f\n", sqrtValue, outputValue);
 
-        };
+        };*/
 
         sqrtValue++;
 
 
-    }while(inputValue <= sqrtValue);
+    }while(inputValue >= sqrtValue);
 
-
-
-
-
+    return 0; 
 
 }
