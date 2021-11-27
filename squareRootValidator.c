@@ -24,8 +24,8 @@ int main() {
     //Testing if the number inputed is bigger than 0. 
     do{
         scanf("%d", &inputValue);
+
         printf("\n The number inputed correspond to = %d\n\n ", inputValue);
-        printf("-----------------------------------------------------------\n\n");
 
     }while(inputValue < 0);
 
@@ -56,9 +56,9 @@ int main() {
 
     }while(inputValue >= sqrtValue);
 
-    printf("\n\nWere founded totaty %d integer square roots between 1 and %d!\n", seriesTestingValue, inputValue);
-
-    printf("\nOperation finished!\n");
+    printf("\nWere founded totaty %d integer square roots between 1 and %d!\n", seriesTestingValue, inputValue);
+    
+    printf("\nOperation finished!\n\n");
 
     return 0; 
 
