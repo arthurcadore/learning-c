@@ -3,8 +3,7 @@
 
 // ---------------------------------------------------
 
-// Challange: Print triangle shapes in terminal with custom size and number of
-// triangles.
+// Challange: Verify all square roots in a randon gap, and output the integer ones. 
 
 // ---------------------------------------------------
 
@@ -13,15 +12,16 @@
 
 int main() {
 
-    int inputValue, seriesTestingValue, sqrtValue = 1, testingValue;
+    int inputValue, seriesTestingValue = 0, sqrtValue = 1;
 
-    float outputValue; 
+    long double outputValue; 
 
     printf("\n Please input the number series for validating!\n ");
 
     do{
         scanf("%d", &inputValue);
-        printf("\n The number inputed correspond to = %d\n", inputValue);
+        printf("\n The number inputed correspond to = %d\n\n ", inputValue);
+        printf("-----------------------------------------------------------\n\n");
 
     }while(inputValue < 0);
 
@@ -29,22 +29,31 @@ int main() {
 
         outputValue = (float) sqrt(sqrtValue);
 
-        testingValue = outputValue * outputValue;
 
-         if((sqrtValue - testingValue) == 0){
+     
+             if(ceil(outputValue) == floor(outputValue)){
 
-         printf("\n The sqrt number of %d is intiger, and correspond to = %f\n", sqrtValue, outputValue);
-        
-        } /*else {
+                printf("\n-----------------------------------------------------------\n");
+                
+                printf("\n The sqrt number of %d is integer, and correspond to = %Lf\n", sqrtValue, outputValue);
 
-         printf("\n The sqrt number of %d isn't an intiger number, and it value correspond to = %f\n", sqrtValue, outputValue);
+                printf("\n-----------------------------------------------------------\n");
 
-        };*/
+                seriesTestingValue++;
+
+             }else{
+
+                printf("\n The sqrt number of %d isn't an intiger number, and it value correspond to = %Lf\n", sqrtValue, outputValue);
+                
+            };
 
         sqrtValue++;
 
-
     }while(inputValue >= sqrtValue);
+
+    printf("\n\nWere founded totaty %d integer square roots between 1 and %d!\n", seriesTestingValue, inputValue);
+
+    printf("\nOperation finished!\n");
 
     return 0; 
 
