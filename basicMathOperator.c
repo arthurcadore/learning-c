@@ -80,7 +80,7 @@ int main()
                expressionOutput);
     }
 
-    /*else if (mathOperator == 6) {
+    else if (mathOperator == 6) {
         expressionOutput = sqrt(input1);
 
         printf("\nThe square root of the first value correspond to = %f\n",
@@ -90,7 +90,7 @@ int main()
 
         printf("\nThe square root of the second value correspond to = %f\n",
                expressionOutput);
-    }*/
+    }
 
     else {
         printf("\nOperator is Invalid, please write it again!\n");
