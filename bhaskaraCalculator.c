@@ -8,26 +8,17 @@ int main() {
 
     float outputA, outputB, outputA1, outputB1;
 
-    do {
-        printf("\nPlease input the value of 'A'!\n");
-        scanf("%d", &inputA);
-        printf("\nThe value inputed of 'A' is = %d\n", inputA);
+    printf("\nPlease input the value of 'A'!\n");
+    scanf("%d", &inputA);
+    printf("\nThe value inputed of 'A' is = %d\n", inputA);
 
-    } while (inputA < 0);
+    printf("\nPlease input the value of 'B'!\n");
+    scanf("%d", &inputB);
+    printf("\nThe value inputed of 'B' is = %d\n", inputB);
 
-    do {
-        printf("\nPlease input the value of 'B'!\n");
-        scanf("%d", &inputB);
-        printf("\nThe value inputed of 'B' is = %d\n", inputB);
-
-    } while (inputB < 0);
-
-    do {
-        printf("\nPlease input the value of 'C'!\n");
-        scanf("%d", &inputC);
-        printf("\nThe value inputed of 'C' is = %d\n", inputC);
-
-    } while (inputC < 0);
+    printf("\nPlease input the value of 'C'!\n");
+    scanf("%d", &inputC);
+    printf("\nThe value inputed of 'C' is = %d\n", inputC);
 
     inputBExponation = (inputB * inputB);
 
