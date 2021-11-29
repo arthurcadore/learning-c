@@ -28,40 +28,40 @@ int main() {
     // Validating if the values inputed are correct
     do {
         // Scanning terminal values.
-        printf("\n Please Input the value of 'X¹¹' !\n");
+        printf("\n Please Input the value of 'X¹¹' = ");
         scanf("%d", &input11);
 
-        printf("\n Please Input the value of 'X¹²' !\n");
+        printf("\n Please Input the value of 'X¹²' = ");
         scanf("%d", &input12);
 
-        printf("\n Please Input the value of 'X¹³' !\n");
+        printf("\n Please Input the value of 'X¹³' = ");
         scanf("%d", &input13);
 
-        printf("\n Please Input the value of 'X¹⁴' !\n");
+        printf("\n Please Input the value of 'X¹⁴' = ");
         scanf("%d", &input14);
 
-        printf("\n Please Input the value of 'X²¹' !\n");
+        printf("\n Please Input the value of 'X²¹' = ");
         scanf("%d", &input21);
 
-        printf("\n Please Input the value of 'X²²' !\n");
+        printf("\n Please Input the value of 'X²²' = ");
         scanf("%d", &input22);
 
-        printf("\n Please Input the value of 'X²³' !\n");
+        printf("\n Please Input the value of 'X²³' = ");
         scanf("%d", &input23);
 
-        printf("\n Please Input the value of 'X²⁴' !\n");
+        printf("\n Please Input the value of 'X²⁴' = ");
         scanf("%d", &input24);
 
-        printf("\n Please Input the value of 'X³¹' !\n");
+        printf("\n Please Input the value of 'X³¹' = ");
         scanf("%d", &input31);
 
-        printf("\n Please Input the value of 'X³²' !\n");
+        printf("\n Please Input the value of 'X³²' = ");
         scanf("%d", &input32);
 
-        printf("\n Please Input the value of 'X³³' !\n");
+        printf("\n Please Input the value of 'X³³' = ");
         scanf("%d", &input33);
 
-        printf("\n Please Input the value of 'X³⁴' !\n");
+        printf("\n Please Input the value of 'X³⁴' = ");
         scanf("%d", &input34);
 
         printf(
@@ -90,6 +90,13 @@ int main() {
     detXB = -(input13 * input22 * input31) - (input11 * input23 * input32) -
             (input12 * input21 * input33);
 
+
+    detX1A = (input14 * input22 * input33) + (input12 * input23 * input34) +
+            (input13 * input24 * input32);
+
+    detX1B = -(input13 * input22 * input34) - (input14 * input23 * input32) -
+            (input12 * input24 * input33);
+
     // detX1 = (input13 * input22) - (input12 * input23);
 
     // detX2 = (input11 * input23) - (input13 * input21);
@@ -105,7 +112,7 @@ int main() {
 
     printf("\n detx = %d \n", detX);
 
-    // printf("\n detx1 = %d \n", detX1);
+    printf("\n detx1 = %d \n", detX1);
 
     // printf("\n detx2 = %d \n", detX2);
 
@@ -123,7 +130,7 @@ int main() {
 
     // printf("-----------------------------------------------------------");
 
-    // printf("\nOperation finished!\n");
+    // printf("\nOperation finished!\n ");
 
     return 0;
 }
