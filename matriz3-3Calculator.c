@@ -97,11 +97,18 @@ int main() {
     detX1B = -(input13 * input22 * input34) - (input14 * input23 * input32) -
             (input12 * input24 * input33);
 
-    // detX1 = (input13 * input22) - (input12 * input23);
+    detX2A = (input11 * input24 * input33) + (input14 * input23 * input31) +
+            (input13 * input21 * input34);
 
-    // detX2 = (input11 * input23) - (input13 * input21);
+    detX2B = -(input13 * input24 * input31) - (input11 * input23 * input34) -
+            (input14 * input21 * input33);
 
-    // detX2 = (input11 * input23) - (input13 * input21);
+    detX3A = (input11 * input22 * input34) + (input12 * input24 * input31) +
+            (input14 * input21 * input32);
+
+    detX3B = -(input14 * input22 * input31) - (input11 * input24 * input32) -
+            (input12 * input21 * input34);
+
 
     detX = (detXA + detXB);
     detX1 = (detX1A + detX1B);
@@ -114,7 +121,9 @@ int main() {
 
     printf("\n detx1 = %d \n", detX1);
 
-    // printf("\n detx2 = %d \n", detX2);
+    printf("\n detx2 = %d \n", detX2);
+
+    printf("\n detx2 = %d \n", detX3);
 
     printf("-----------------------------------------------------------");
 
