@@ -22,22 +22,22 @@ int main() {
     // Validating if the values inputed are correct
     do {
         // Scanning terminal values.
-        printf("\n Please Input the value of 'X¹¹' !\n");
+        printf("\n Please Input the value of 'X¹¹' = ");
         scanf("%d", &input11);
 
-        printf("\n Please Input the value of 'X¹²' !\n");
+        printf("\n Please Input the value of 'X¹²' = ");
         scanf("%d", &input12);
 
-        printf("\n Please Input the value of 'X¹³' !\n");
+        printf("\n Please Input the value of 'X¹³' = ");
         scanf("%d", &input13);
 
-        printf("\n Please Input the value of 'X²¹' !\n");
+        printf("\n Please Input the value of 'X²¹' = ");
         scanf("%d", &input21);
 
-        printf("\n Please Input the value of 'X²²' !\n");
+        printf("\n Please Input the value of 'X²²' = ");
         scanf("%d", &input22);
 
-        printf("\n Please Input the value of 'X²³' !\n");
+        printf("\n Please Input the value of 'X²³' = ");
         scanf("%d", &input23);
 
         printf(
@@ -51,7 +51,7 @@ int main() {
         printf("| %d | %d | = %d |\n", input11, input12, input13);
         printf("| %d | %d | = %d |\n", input21, input22, input23);
 
-        printf("\n If the matriz is correct input (1), else, input (2) = ");
+        printf("\n For correct input (1), else, input (2) = ");
 
         scanf("%d", &validatingMatriz);
 
@@ -67,11 +67,11 @@ int main() {
 
     printf("\n-----------------------------------------------------------");
 
-    printf("\n detx = %d \n", detX);
+    printf("\n General Determinant = %d \n", detX);
 
-    printf("\n detx1 = %d \n", detX1);
+    printf("\n Determinant of X1 = %d \n", detX1);
 
-    printf("\n detx2 = %d \n", detX2);
+    printf("\n Determinant of X2 = %d \n", detX2);
 
     printf("-----------------------------------------------------------");
 
@@ -81,9 +81,9 @@ int main() {
 
     outX2 = (float)detX2 / detX;
 
-    printf("\n X1 = %f \n", outX1);
+    printf("\n Vaule of X1 = %f \n", outX1);
 
-    printf("\n X2 = %f \n", outX2);
+    printf("\n Value of X2 = %f \n", outX2);
 
     printf("-----------------------------------------------------------");
 
