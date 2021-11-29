@@ -1,6 +1,7 @@
 // Course: Telecom engineering
 // Name: Cadore-AC
-// Note: For compilation of this code in gcc compiler, we need to add "-lm" in the command line, for example: gcc basicMathOperator.c -lm
+// Note: For compilation of this code in gcc compiler, we need to add "-lm" in
+// the command line, for example: gcc basicMathOperator.c -lm
 
 // ---------------------------------------------------
 
