@@ -1,12 +1,27 @@
+// Course: Telecom engineering
+// Name: Cadore-AC
+
+// ---------------------------------------------------
+
+// Challange: Caculating matriz 2x2 with sarrus rule.
+
+// ---------------------------------------------------
+
 #include <stdio.h>
 
 int main() {
-    int input11, input12, input13, input21, input22, input23, validatingMatriz,
-        detX, detX1, detX2;
+    // Creating variables for input values.
+    int input11, input12, input13, input21, input22, input23;
 
+    // Variables for math operation
+    int validatingMatriz, detX, detX1, detX2;
+
+    // Variables (type float) for output, need to be float for decimal numbers.
     float outX1, outX2;
 
+    // Validating if the values inputed are correct
     do {
+        // Scanning terminal values.
         printf("\n Please Input the value of 'X¹¹' !\n");
         scanf("%d", &input11);
 
@@ -30,6 +45,8 @@ int main() {
             "\n");
 
         printf("\n Please verify if the matriz input are correct: \n\n");
+
+        // Printing matriz in terminal to verify if the input is correct.
 
         printf("| %d | %d | = %d |\n", input11, input12, input13);
         printf("| %d | %d | = %d |\n", input21, input22, input23);
@@ -58,7 +75,7 @@ int main() {
 
     printf("-----------------------------------------------------------");
 
-    // Calculating and printing the outputs:
+    // Calculating x1 and x2 and printing the outputs:
 
     outX1 = (float)detX1 / detX;
 
