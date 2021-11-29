@@ -123,23 +123,27 @@ int main() {
 
     printf("\n detx2 = %d \n", detX2);
 
-    printf("\n detx2 = %d \n", detX3);
+    printf("\n detx3 = %d \n", detX3);
 
     printf("-----------------------------------------------------------");
 
     // Calculating x1 and x2 and printing the outputs:
 
-    // outX1 = (float)detX1 / detX;
+    outX1 = (float)detX1 / detX;
 
-    //  outX2 = (float)detX2 / detX;
+    outX2 = (float)detX2 / detX;
 
-    // printf("\n X1 = %f \n", outX1);
+    outX3 = (float)detX3 / detX;
 
-    // printf("\n X2 = %f \n", outX2);
+    printf("\n X1 = %f \n", outX1);
 
-    // printf("-----------------------------------------------------------");
+    printf("\n X2 = %f \n", outX2);
 
-    // printf("\nOperation finished!\n ");
+    printf("\n X3 = %f \n", outX3);
+
+    printf("-----------------------------------------------------------");
+
+    printf("\nOperation finished!\n ");
 
     return 0;
 }
