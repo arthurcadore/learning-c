@@ -3,7 +3,7 @@
 
 // ---------------------------------------------------
 
-// Challange: Caculating matriz 2x2 with sarrus rule.
+// Challange: Caculating matriz 3x3 with sarrus rule.
 
 // ---------------------------------------------------
 
@@ -17,6 +17,7 @@ int main() {
 
     // Variables for math operation
     int validatingMatriz;
+
     int detX, detXA, detXB;
     int detX1, detX1A, detX1B;
     int detX2, detX2A, detX2B;
@@ -90,25 +91,23 @@ int main() {
     detXB = -(input13 * input22 * input31) - (input11 * input23 * input32) -
             (input12 * input21 * input33);
 
-
     detX1A = (input14 * input22 * input33) + (input12 * input23 * input34) +
-            (input13 * input24 * input32);
+             (input13 * input24 * input32);
 
     detX1B = -(input13 * input22 * input34) - (input14 * input23 * input32) -
-            (input12 * input24 * input33);
+             (input12 * input24 * input33);
 
     detX2A = (input11 * input24 * input33) + (input14 * input23 * input31) +
-            (input13 * input21 * input34);
+             (input13 * input21 * input34);
 
     detX2B = -(input13 * input24 * input31) - (input11 * input23 * input34) -
-            (input14 * input21 * input33);
+             (input14 * input21 * input33);
 
     detX3A = (input11 * input22 * input34) + (input12 * input24 * input31) +
-            (input14 * input21 * input32);
+             (input14 * input21 * input32);
 
     detX3B = -(input14 * input22 * input31) - (input11 * input24 * input32) -
-            (input12 * input21 * input34);
-
+             (input12 * input21 * input34);
 
     detX = (detXA + detXB);
     detX1 = (detX1A + detX1B);
@@ -117,33 +116,31 @@ int main() {
 
     printf("\n-----------------------------------------------------------");
 
-    printf("\n detx = %d \n", detX);
+    printf("\n General Determinant = %d \n", detX);
 
-    printf("\n detx1 = %d \n", detX1);
+    printf("\n Determinant of X1 = %d \n", detX1);
 
-    printf("\n detx2 = %d \n", detX2);
+    printf("\n Determinant of X2 = %d \n", detX2);
 
-    printf("\n detx3 = %d \n", detX3);
+    printf("\n Determinant of X3 = %d \n", detX3);
 
     printf("-----------------------------------------------------------");
 
     // Calculating x1 and x2 and printing the outputs:
 
     outX1 = (float)detX1 / detX;
-
     outX2 = (float)detX2 / detX;
-
     outX3 = (float)detX3 / detX;
 
-    printf("\n X1 = %f \n", outX1);
+    printf("\n Vaule of X1 = %f \n", outX1);
 
-    printf("\n X2 = %f \n", outX2);
+    printf("\n Vaule of X2 = %f \n", outX2);
 
-    printf("\n X3 = %f \n", outX3);
+    printf("\n Vaule of X3 = %f \n", outX3);
 
     printf("-----------------------------------------------------------");
 
-    printf("\nOperation finished!\n ");
+    printf("\n\nOperation finished!\n\n");
 
     return 0;
 }
