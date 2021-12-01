@@ -1,54 +1,43 @@
- /*
+/*
 AUTOR: Arthur Cadore Matuella Barcella
 DATA: 30/11/21
 SINOPSE DO PROGRAMA: Computar valores de F(x) dado um intervalo.
 DADOS DE ENTRADA: InputA, InputB;
-DADOS DE SAIDA: Output3
+DADOS DE SAIDA: Output3.
 */
 
 #include <stdio.h>
 
-int main(){
+int main() {
+    int inputA, inputB, variableA, integerOutput, output2 = 0,
+                                                  variableSeries = 0;
 
-	int inputA, inputB,variableA, integerOutput, output2 = 0, variableSeries=0; 
+    float output3;
 
-	float output3; 
+    printf("\nPlease input the first input =");
 
-	
+    scanf("%d", &inputA);
+    printf("\nInputA = %d\n", inputA);
 
-	printf("\nPlease input the first input =");
+    do {
+        printf("\nPlease input the second input =");
 
-	scanf("%d", &inputA);
-	printf("\nInputA = %d\n", inputA);
+        scanf("%d", &inputB);
+        printf("\nInputB = %d\n", inputB);
 
-	
+    } while (inputB <= inputA);
 
-	do{
+    for (variableA = inputA; variableA <= inputB; variableA++) {
+        integerOutput = (7 * variableA) - 9;
 
-	printf("\nPlease input the second input =");
+        output2 = output2 + integerOutput;
 
-	scanf("%d", &inputB);
-	printf("\nInputB = %d\n", inputB);
+        variableSeries++;
+    };
 
-	}while(inputB <= inputA);
+    output3 = (float)output2 / variableSeries;
 
+    printf("\n The media value output is = %f\n", output3);
 
-	for(variableA = inputA; variableA <= inputB; variableA++){
-
-	integerOutput = (7 * variableA) - 9;
-
-	output2 = output2 + integerOutput;
-
-	variableSeries++;
-
-};
-
-	output3 = (float)output2/variableSeries;
-
-	printf("\n The media value output is = %f\n", output3);
-
-
-
-return 0;
-
+    return 0;
 }
