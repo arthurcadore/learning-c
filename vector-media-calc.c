@@ -47,14 +47,10 @@ int compara_vetores(int x[], int y[], int tamanhoVetor){
 
     printf("\nValor do segundo vetor = %d\n", x2);
 
-    if(x1==0){
+    if(x1==0 || x2==0){
 
         return -2;
-
-    }else if(x2==0){
-
-        return -2;
-
+        
     }else if(x1==x2){
 
         return 0;
