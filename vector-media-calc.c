@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 
+int contagem=1;
+
 float media_vetor(int x[], int tamanho){
 
     int i=0;
@@ -26,7 +28,7 @@ float media_vetor(int x[], int tamanho){
 };
 
 
-int compara_vetores(int x[], int y[], int tamanhoVetor, int contagem){
+int compara_vetores(int x[], int y[], int tamanhoVetor){
 
     int x1, x2;
 
@@ -59,13 +61,13 @@ int compara_vetores(int x[], int y[], int tamanhoVetor, int contagem){
 
 int main(){
 
-    int output, i=1; 
+    int output; 
     
     int z[5]={2, 3, 5, 6, 9}, w[5]={4, 8, 8, 7, 2};
 
-    for(i=1;i<=4;i++){
+    for(contagem=1;contagem<=4;contagem++){
 
-        output = compara_vetores(z, w, 5, i);
+        output = compara_vetores(z, w, 5);
 
         if(output != 3){ 
             
