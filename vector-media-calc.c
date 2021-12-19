@@ -15,62 +15,67 @@ float media_vetor(int x[], int tamanho){
 
     for(i==0;i<tamanho;i++){
 
-        if (x[i]==0){
-            
-            return 0;
+        if (x[i]==0) return 0;
 
-        }else{
-
-            soma=(float)1/x[i]+soma;
-
-        };
+        else soma=(float)1/x[i]+soma;
     };
 
     soma_harmonica=(float)tamanho/soma;
 
-    //printf("\nValor da soma harmônica = %f\n", soma_harmonica);
-
     return soma_harmonica;
-
 };
 
 
-int compara_vetores(int x[], int y[], int tamanhoVetor){
+int compara_vetores(int x[], int y[], int tamanhoVetor, int contagem){
 
     int x1, x2;
 
     x1=media_vetor(x, tamanhoVetor);
-
-    printf("\nValor do primeiro vetor = %d\n", x1);
-
     x2=media_vetor(y, tamanhoVetor);
 
-    printf("\nValor do segundo vetor = %d\n", x2);
+    switch (contagem){
 
-    if(x1==0 || x2==0){
-
-        return -2;
-        
-    }else if(x1==x2){
-
-        return 0;
-
-    }else if(x1 > x2){
-
-        return 1;
-
-    }else if(x1 < x2){
-
-        return -1;
+        case 1: 
+            if(x1==0 || x2==0) return -2;
+            else return 3; 
+        break; 
+    
+        case 2: 
+            if(x1==x2) return 0;
+            else return 3; 
+        break; 
+    
+        case 3:
+            if(x1 > x2) return 1;
+            else return 3; 
+        break; 
+    
+        case 4:
+            if(x1 < x2) return -1;
+            else return 3; 
+        break;
     };
 };
 
 int main(){
 
+    int output, i=1; 
+    
     int z[5]={2, 3, 5, 6, 9}, w[5]={4, 8, 8, 7, 2};
 
-    printf("\nRetorno da comparação entre vetores = %d\n", compara_vetores(z, w, 5));
+    for(i=1;i<=4;i++){
 
-};
+        output = compara_vetores(z, w, 5, i);
+
+        if(output != 3){ 
+            
+            printf("\nRetorno da comparação entre vetores = %d\n\n", output);
+
+            break;
+        };
+        output == 0; 
+    }
+
+}
 
 
