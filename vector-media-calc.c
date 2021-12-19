@@ -8,62 +8,32 @@
 
 #include <stdio.h>
 
-int vetcalc (int vetX[], int vetX[], nValue){
+float media_vetor(int x[], int tamanho){
 
-    int k=0, h=1, vetXcopy[], count++;
+    int i=0;
+    
+    float soma=0;
 
-    for (k=0;k<=nValue;i++){
+    for(i==0;i<tamanho;i++){
 
-        for (h=1;h<=nValue;i++){
+        soma=(float)1/x[i]+soma;
 
-            if(vetX[k] =! vetX[h])
-            vetXcopy[k]=vetX[k];
-        }
-    }
+        printf("valor soma = %f\n", soma);
+    };
 
-    k=0;
-    h=1;
-    for (k=0;k<=nValue;i++){
-
-        for (h=1;h<=nValue;i++){
-
-            if(vetXcopy[k] == vetX[h])
-            count++;
-        }
-    }
-
-    return conut;
-
-}
-
-int main() {
-
-    int nValue = 0; 
-    int cout; 
-
-    do {
-        printf("\nPlese input the 'N' series value = ");
-
-        scanf("%d", &nValue);
-
-        printf("\nThe number inputed correspond to = %d \n", nValue);
-
-    } while (nValue < 0);
-
-    count = int vetcalc(x[], nValue);
+};
 
 
+//int compara_vetores(int x[], int y[], int tamanho)
 
-    }
+int main(){
+
+    int y[3]={3, 3, 3}, w[3]={5, 9 ,1};
+
+    media_vetor(y, 3);
+
+    //printf("retorno %d\n", compara_vetores(y,w,3));
+
+};
 
 
-
-    // Calulating "u" value: 
-
-    uCalc(vectorValue, nValue);
-
-
-
-
-   return 0; 
-}
