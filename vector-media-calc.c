@@ -28,30 +28,42 @@ float media_vetor(int x[], int tamanho){
 
     soma_harmonica=(float)tamanho/soma;
 
+    printf("\nValor da soma harmônica = %f\n", soma_harmonica);
+
     return soma_harmonica;
 
 };
 
 
-int compara_vetores(int x[], int y[]){
+int compara_vetores(int x[], int y[], int tamanhoVetor){
 
-    if(x[1]==0){
+    int x1, x2;
+
+    x1=media_vetor(x, tamanhoVetor);
+
+    printf("\n\nValor do primeiro vetor = %d\n", x1);
+
+    x2=media_vetor(y, tamanhoVetor);
+
+    printf("Valor do segundo vetor = %d\n\n", x2);
+
+    if(x1==0){
 
         return -2;
 
-    }else if(y[1]==0){
+    }else if(x2==0){
 
         return -2;
 
-    }else if(x[1]==y[1]){
+    }else if(x1==x2){
 
         return 0;
 
-    }else if(x[1] > y[1]){
+    }else if(x1 > x2){
 
         return 1;
 
-    }else if(x[1] < y[1]){
+    }else if(x1 < x2){
 
         return -1;
     };
@@ -61,15 +73,9 @@ int main(){
 
     int output; 
 
-    int z[3]={16, 56, 8}, w[3]={4, 8, 8}, x[1], y[1];
+    int z[5]={2, 3, 5, 6, 9}, w[5]={4, 8, 8, 7, 2};
 
-    x[1]=media_vetor(z, 3);
-    printf("\n\nValor do primeiro vetor = %d\n", x[1]);
-
-    y[1]=media_vetor(w, 3);
-    printf("Valor do segundo vetor = %d\n\n", y[1]);
-
-    output = compara_vetores(x,y);
+    output = compara_vetores(z, w, 5);
 
     printf("Retorno da comparação entre vetores = %d\n", output);
 
