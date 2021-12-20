@@ -30,7 +30,7 @@ float media_vetor(int x[], int tamanho){
 
 int compara_vetores(int x[], int y[], int tamanhoVetor){
 
-    int x1, x2;
+    float x1, x2;
 
     x1=media_vetor(x, tamanhoVetor);
     x2=media_vetor(y, tamanhoVetor);
@@ -38,8 +38,12 @@ int compara_vetores(int x[], int y[], int tamanhoVetor){
     switch (contagem){
 
         case 1: 
+            printf("\n\nValor da soma harmônica do vetor 'Z' = %f\n", x1);
+            printf("Valor da soma harmônica do vetor 'W' = %f\n\n", x2);
+
             if(x1==0 || x2==0) return -2;
-            else return 3; 
+            else return 3;
+
         break; 
     
         case 2: 
@@ -63,7 +67,7 @@ int main(){
 
     int output; 
     
-    int z[5]={2, 3, 5, 6, 9}, w[5]={4, 8, 8, 7, 2};
+    int z[5]={4, 8, 5, 7, 2}, w[5]={4, 8, 8, 7, 2};
 
     for(contagem=1;contagem<=4;contagem++){
 
@@ -71,7 +75,7 @@ int main(){
 
         if(output != 3){ 
             
-            printf("\nRetorno da comparação entre vetores = %d\n\n", output);
+            printf("Retorno da comparação entre vetores = %d\n\n", output);
 
             break;
         };
