@@ -8,11 +8,34 @@
 
 #include <stdio.h>
 
-int summation(int summationSeries, float input){
+int summationU(int summationSeries, float input){
 
     int i; 
 
-    float output = 0, output1; 
+    float summationOuput = 0, output1, output2 outputU; 
+
+    for(i=1;i<=summationSeries;i++){
+
+        output1 =(float) i*input;
+
+        summationOuput =(float) output1 + output; 
+
+    };
+    
+    output2 = 1/summationSeries;
+
+    outputU = output2*output1;
+
+    return = onutputU; 
+
+}
+
+
+int main() {
+
+    int summationSeries; 
+
+    float input;
 
     do{
     
@@ -26,21 +49,7 @@ int summation(int summationSeries, float input){
 
     scanf("%f", &input);
 
-    for(i=1;i<=summationSeries;i++){
 
-        output1 =(float) i*input;
-
-        output =(float) output1 + output; 
-
-    }
-
-    printf("\nThe summation value is = %f\n\n", output);
-
-
-}
-
-
-int main() {
 
 
    return 0; 
