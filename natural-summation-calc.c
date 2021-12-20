@@ -10,9 +10,9 @@
 
 int main() {
 
-    int summationSeries, i, output1; 
+    int summationSeries, i; 
 
-    float input, output = 0; 
+    float input, output = 0, output1; 
 
     do{
     
