@@ -12,7 +12,7 @@ int summationU(int summationSeries, float input){
 
     int i; 
 
-    float summationOuput = 0, output1, output2 outputU; 
+    float summationOuput = 0, output1, output2, outputU; 
 
     for(i=1;i<=summationSeries;i++){
 
@@ -30,12 +30,42 @@ int summationU(int summationSeries, float input){
 
 }
 
+int summationDevitation(int summationSeries, float input, float u){
+
+    int i; 
+
+    float summationOuput = 0, output1, output2, output3, output4; 
+
+    output1 = (input - u);
+    output2 = ()
+
+
+    for(i=1;i<=summationSeries;i++){
+
+
+
+
+        output1 =(float) i*input;
+
+        summationOuput =(float) output1 + output; 
+
+    };
+    
+    output2 = 1/summationSeries;
+
+    outputU = output2*output1;
+
+    return = onutputU; 
+
+}
+
+
 
 int main() {
 
     int summationSeries; 
 
-    float input;
+    float input, u;
 
     do{
     
@@ -48,6 +78,11 @@ int main() {
     printf("\nPlease input the summation value = ");
 
     scanf("%f", &input);
+
+    u = summationU(summationSeries, input);
+
+    u = summationDevitation(summationSeries, input, u);
+
 
 
 
