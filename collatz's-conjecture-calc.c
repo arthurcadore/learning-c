@@ -1,3 +1,11 @@
+// Course: Telecom engineering
+// Name: Cadore-AC
+
+// ---------------------------------------------------
+
+// Challange: Do math operation for bhaskara expression
+
+// ---------------------------------------------------
 #include <stdio.h>
 
 int main() {

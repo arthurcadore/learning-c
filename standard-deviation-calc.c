@@ -3,77 +3,62 @@
 
 // ---------------------------------------------------
 
-// Challange: Make an C function to calculate the standard devitation of two values. 
+// Challange: Make an C function to calculate the standard devitation of two
+// values.
 // ----------------------------------------------------
 
 #include <stdio.h>
 
-int summationU(int summationSeries, float input){
+int summationU(int summationSeries, float input) {
+    int i;
 
-    int i; 
+    float summationOuput = 0, output1, output2, outputU;
 
-    float summationOuput = 0, output1, output2, outputU; 
+    for (i = 1; i <= summationSeries; i++) {
+        output1 = (float)i * input;
 
-    for(i=1;i<=summationSeries;i++){
-
-        output1 =(float) i*input;
-
-        summationOuput =(float) output1 + output; 
-
+        summationOuput = (float)output1 + output;
     };
-    
-    output2 = 1/summationSeries;
 
-    outputU = output2*output1;
+    output2 = 1 / summationSeries;
 
-    return = onutputU; 
+    outputU = output2 * output1;
 
+    return = onutputU;
 }
 
-int summationDevitation(int summationSeries, float input, float u){
+int summationDevitation(int summationSeries, float input, float u) {
+    int i;
 
-    int i; 
-
-    float summationOuput = 0, output1, output2, output3, output4; 
+    float summationOuput = 0, output1, output2, output3, output4;
 
     output1 = (input - u);
     output2 = ()
 
+        for (i = 1; i <= summationSeries; i++) {
+        output1 = (float)i * input;
 
-    for(i=1;i<=summationSeries;i++){
-
-
-
-
-        output1 =(float) i*input;
-
-        summationOuput =(float) output1 + output; 
-
+        summationOuput = (float)output1 + output;
     };
-    
-    output2 = 1/summationSeries;
 
-    outputU = output2*output1;
+    output2 = 1 / summationSeries;
 
-    return = onutputU; 
+    outputU = output2 * output1;
 
+    return = onutputU;
 }
 
-
-
 int main() {
-
-    int summationSeries; 
+    int summationSeries;
 
     float input, u;
 
-    do{
-    
-    printf("\nPlese input the summation series value = ");
+    do {
+        printf("\nPlese input the summation series value = ");
 
-    scanf("%d", &summationSeries);
+        scanf("%d", &summationSeries);
 
-    }while(summationSeries<=0);
+    } while (summationSeries <= 0);
 
     printf("\nPlease input the summation value = ");
 
@@ -83,9 +68,5 @@ int main() {
 
     u = summationDevitation(summationSeries, input, u);
 
-
-
-
-
-   return 0; 
+    return 0;
 }

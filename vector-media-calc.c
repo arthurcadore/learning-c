@@ -2,86 +2,88 @@
 // Name: Cadore-AC
 
 // ---------------------------------------------------
-// Challange: MTM2.2 
+// Challange: MTM2.2
 // ----------------------------------------------------
 
 #include <stdio.h>
 
-int contagem=1;
+int contagem = 1;
 
-float media_vetor(int x[], int tamanho){
+float media_vetor(int x[], int tamanho) {
+    int i = 0;
 
-    int i=0;
-    
-    float soma=0, soma_harmonica=0;
+    float soma = 0, soma_harmonica = 0;
 
-    for(i==0;i<tamanho;i++){
+    for (i == 0; i < tamanho; i++) {
+        if (x[i] == 0)
+            return 0;
 
-        if (x[i]==0) return 0;
-
-        else soma=(float)1/x[i]+soma;
+        else
+            soma = (float)1 / x[i] + soma;
     };
 
-    soma_harmonica=(float)tamanho/soma;
+    soma_harmonica = (float)tamanho / soma;
 
     return soma_harmonica;
 };
 
-
-int compara_vetores(int x[], int y[], int tamanhoVetor){
-
+int compara_vetores(int x[], int y[], int tamanhoVetor) {
     float x1, x2;
 
-    x1=media_vetor(x, tamanhoVetor);
-    x2=media_vetor(y, tamanhoVetor);
+    x1 = media_vetor(x, tamanhoVetor);
+    x2 = media_vetor(y, tamanhoVetor);
 
-    switch (contagem){
-
-        case 1: 
+    switch (contagem) {
+        case 1:
             printf("\n\nValor da média harmônica do vetor 'Z' = %f\n", x1);
             printf("Valor da média harmônica do vetor 'W' = %f\n\n", x2);
 
-            if(x1==0 || x2==0) return -2;
-            else return 3;
+            if (x1 == 0 || x2 == 0)
+                return -2;
+            else
+                return 3;
 
-        break; 
-    
-        case 2: 
-            if(x1==x2) return 0;
-            else return 3; 
-        break; 
-    
+            break;
+
+        case 2:
+            if (x1 == x2)
+                return 0;
+            else
+                return 3;
+            break;
+
         case 3:
-            if(x1 > x2) return 1;
-            else return 3; 
-        break; 
-    
+            if (x1 > x2)
+                return 1;
+            else
+                return 3;
+            break;
+
         case 4:
-            if(x1 < x2) return -1;
-            else return 3; 
-        break;
+            if (x1 < x2)
+                return -1;
+            else
+                return 3;
+            break;
     };
 };
 
-int main(){
+int main() {
+    int output;
 
-    int output; 
-    
-    int z[5]={4, 8, 5, 7, 2}, w[5]={4, 8, 8, 7, 2};
+    int z[5] = {4, 8, 5, 7, 2}, w[5] = {4, 8, 8, 7, 2};
 
-    for(contagem=1;contagem<=4;contagem++){
-
+    for (contagem = 1; contagem <= 4; contagem++) {
         output = compara_vetores(z, w, 5);
 
-        if(output != 3){ 
-            
-            printf("Retorno da comparação das médias dos vetores 'Z' e 'W' = %d\n\n", output);
+        if (output != 3) {
+            printf(
+                "Retorno da comparação das médias dos vetores 'Z' e 'W' = "
+                "%d\n\n",
+                output);
 
             break;
         };
-        output == 0; 
+        output == 0;
     }
-
 }
-
-
