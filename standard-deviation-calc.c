@@ -71,7 +71,7 @@ int main() {
 
     finalOuput = summationDevitation(summationSeries, input, u);
 
-    printf("The standard devitation is = %f", finalOuput);
+    printf("\nThe standard devitation is = %f\n\n", finalOuput);
 
     return 0;
 }
