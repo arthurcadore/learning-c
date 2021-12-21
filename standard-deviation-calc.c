@@ -7,6 +7,7 @@
 // values.
 // ----------------------------------------------------
 
+#include <math.h>
 #include <stdio.h>
 
 int summationU(int summationSeries, float input) {
@@ -17,41 +18,43 @@ int summationU(int summationSeries, float input) {
     for (i = 1; i <= summationSeries; i++) {
         output1 = (float)i * input;
 
-        summationOuput = (float)output1 + output;
+        summationOuput = (float)output1 + summationOuput;
     };
 
-    output2 = 1 / summationSeries;
+    output2 = (float)1 / summationSeries;
 
-    outputU = output2 * output1;
+    outputU = (float)output2 * summationOuput;
 
-    return = onutputU;
+    return outputU;
 }
 
 int summationDevitation(int summationSeries, float input, float u) {
     int i;
 
-    float summationOuput = 0, output1, output2, output3, output4;
+    float summationOuput = 0, output1, output2, output3, devitationOuput1,
+          devitationOuput;
 
-    output1 = (input - u);
-    output2 = ()
-
-        for (i = 1; i <= summationSeries; i++) {
+    for (i = 1; i <= summationSeries; i++) {
         output1 = (float)i * input;
+        output2 = output1 - u;
+        output3 = output2 * output2;
 
-        summationOuput = (float)output1 + output;
+        summationOuput = (float)output3 + summationOuput;
     };
 
-    output2 = 1 / summationSeries;
+    output2 = (float)1 / summationSeries;
 
-    outputU = output2 * output1;
+    devitationOuput1 = (float)output2 * summationOuput;
 
-    return = onutputU;
+    devitationOuput = (float)sqrt(devitationOuput1);
+
+    return devitationOuput;
 }
 
 int main() {
     int summationSeries;
 
-    float input, u;
+    float input, u, finalOuput;
 
     do {
         printf("\nPlese input the summation series value = ");
@@ -66,7 +69,9 @@ int main() {
 
     u = summationU(summationSeries, input);
 
-    u = summationDevitation(summationSeries, input, u);
+    finalOuput = summationDevitation(summationSeries, input, u);
+
+    printf("The standard devitation is = %f", finalOuput);
 
     return 0;
 }
