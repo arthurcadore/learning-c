@@ -153,7 +153,7 @@ int shot() {
     printf("\n");
     do {
         do {
-            printf("Please input the horizontal for shot (1-9) =  ");
+            printf("Please input the horizontal for shot (0-9) =  ");
             scanf("%d", &shotY);
 
         } while (shotY < 0);
@@ -161,7 +161,7 @@ int shot() {
 
     do {
         do {
-            printf("Please input the longitudinal for shot (1-9) =  ");
+            printf("Please input the longitudinal for shot (0-9) =  ");
             scanf("%d", &shotX);
 
         } while (shotX < 0);
